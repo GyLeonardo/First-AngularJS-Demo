@@ -10,10 +10,10 @@ const dependencies = [
   'ngRoute',
   home.name,
 ];
-
+//点击率
 const clicks = Rx.fromEvent(document, 'click');
 clicks.pipe(
-  RxOper.throttleTime(1000),
+  RxOper.throttleTime(1000),//一秒之内的多次点击不算
   RxOper.scan(count => count + 1, 0)
 ).subscribe(count => log(`Clicked ${count} times`));
 
