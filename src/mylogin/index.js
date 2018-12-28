@@ -3,10 +3,10 @@ import { InitApp } from '../common/app';
 import { generateLangs } from '../common/i18n';
 import enUS from './languages/en-US.json';
 import zhCN from './languages/zh-CN.json';
-import login from './login';
+import myLoginPage from './myLogin-page';
 
-const dependencies = [login.name];
+const dependencies = [];
 
-const app = InitApp(generateLangs(enUS, zhCN), dependencies, login.page);
+const app = InitApp(generateLangs(enUS, zhCN), dependencies, myLoginPage);
 
 export default app;

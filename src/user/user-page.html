@@ -1,0 +1,29 @@
+<div class="tile">
+  <h3 data-translate="USER" class="tile-title"></h3>
+  <h4>{{ $ctrl.searchRole }}</h4>
+  <div class="tile-footer">
+    <input type="text" name="username" data-ng-model="$ctrl.nameFilter" />
+    <button class="btn btn-primary" ng-click="$ctrl.filterUserName()">Filter</button>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr bgcolor="rgb(12, 53, 4)" style= "color:rgb(240, 132, 9); font-weight:normal">
+        <th>#</th>
+        <th>User Name</th>
+        <th>Location</th>
+        <th>Age</th>
+        <th class = "center" style="width: 150px;" ng-show = "$ctrl.adminAction">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-ng-repeat="user in $ctrl.users">
+        <td></td>
+        <td data-ng-bind="user.name"></td>
+        <td data-ng-bind="user.location"></td>
+        <td data-ng-bind="user.age"></td>
+        <td data-ng-bind="user.role" style="display:none;"></td>
+        <td data-ng-show = "$ctrl.adminAction"><button class="btn btn-default btn-xs">Action</button></tr>
+    </tbody>
+  </table>
+
+</div>

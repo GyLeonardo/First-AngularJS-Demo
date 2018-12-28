@@ -1,5 +1,11 @@
 {
     "LOGIN": "登录",
-    "USER_NAME": "用户名"
+    "USER_NAME": "用户名",
+    "PASSWORD": "密码",
+    "TITLE": "登录访问",
+    "FORGOT_PASSWORD": "忘记了密码 ?",
+    "STAY_SIGNED_IN":"待签署",
+    "BUTTON_LANG_EN": "英语",
+    "BUTTON_LANG_CN": "简体"
   }
   

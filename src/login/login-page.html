@@ -1,13 +1,74 @@
-<h1>Login</h1>
-<div data-ng-bind="$ctrl.LoginTitle"></div>
-<div class="row">
-    <form class="form-control">
-        <div class="form-group"></div>
-        <label class="col-md-6"> {{'USER_NAME' | translate}}</label>
-        <input class="col-md-6" name='username' type='text'>
-        <label class="col-md-6">Password</label>
-        <input class="col-md-6" name='password' type='password'>
-        <div class="col-md-12 text-center"></div>
-        <button class="btn btn-primary" translate="LOGIN"></button>
-    </form>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Login - ChinaSoft Admin</title>
+  </head>
+  <body class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
 </div>
+<div class="pace-activity"></div></div>
+    <section class="material-half-bg">
+      <div class="cover"></div>
+    </section>
+    <section class="login-content">
+      <div class="logo">
+        <h1>ChinaSoft</h1>
+      </div>
+      <div class="login-box">
+        <form class="login-form" >
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>{{'SIGN IN' | translate}}</h3>
+          <div class="form-group">
+            <label class="control-label">{{'USERNAME' | translate}}</label>
+            <input class="form-control" type="text" placeholder="Username"  autofocus="" id="username" required="required" ng-model="$ctrl.username"><span id="user_spqn"></span>
+          </div>
+          <div class="form-group">
+            <label class="control-label">{{'PASSWORD' | translate}}</label>
+            <input class="form-control" type="password" placeholder="Password" id="password" required="required" ng-model="$ctrl.password"><span id="pwd_spqn"></span>
+          </div>
+          <div class="form-group">
+            <div class="utility">
+              <div class="animated-checkbox">
+                <label>
+                  <input type="checkbox"><span class="label-text">{{'Stay Signed in' | translate}}</span>
+                </label>
+              </div>
+              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">{{'Forgot Password ?' | translate}}</a></p>
+            </div>
+          </div>
+          <div class="form-group btn-container">
+            <button class="btn btn-primary btn-block" id="submit" ng-click="$ctrl.login()"><i class="fa fa-sign-in fa-lg fa-fw"></i>{{'LOGIN' | translate}}</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    
+     <!-- <script type="text/javascript">
+      $(function(){
+        //用户名非空校验
+        $("#username").on('blur',function(){
+          //alert("insert");
+          var username = $("#username").val();
+          if(username.trim().length<1){
+            $("#user_spqn").html("<font color='red'>用户名不能为空</font>");
+            
+        }
+        });
+      
+        //密码校验
+        $("#password").on('blur',function(){
+          //alert("insert");
+          var password = $("#password").val();
+          if(password.trim().length<1){
+            $("#pwd_spqn").html("<font color='red'>密码不能为空</font>");
+            
+        }
+        });
+      })
+    </script> -->
+    
+</body>
+</html>

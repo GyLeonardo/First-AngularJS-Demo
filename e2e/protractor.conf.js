@@ -6,7 +6,7 @@ exports.config = {
     '*.js'
   ],
 
-  baseUrl: 'http://localhost:8000/',
+  baseUrl: 'http://localhost:8081/',
 
   framework: 'jasmine',
   seleniumAddress: 'http://localhost:5555/',

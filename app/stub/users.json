@@ -1,0 +1,21 @@
+
+[
+    {
+    "name": "SuperMan",
+    "location": "Atfjow Gwofe",
+    "age":38,
+    "role":"admin"
+},
+{
+    "name": "WuKong",
+    "location": "China",
+    "age":500,
+    "role":"ordinary"
+},
+{
+    "name": "Batman",
+    "location": "Wayne Manor",
+    "age":36,
+    "role":"ordinary"
+}
+]

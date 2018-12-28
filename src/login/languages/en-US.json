@@ -1,5 +1,11 @@
 {
     "LOGIN": "Login",
-    "USER_NAME": "User Name"
+    "USER_NAME": "User Name",
+    "PASSWORD": "Password",
+    "TITLE": "Login Access",
+    "FORGOT_PASSWORD": "Forgot Password ?",
+    "STAY_SIGNED_IN":"stay signed in",
+    "BUTTON_LANG_EN": "English",
+    "BUTTON_LANG_CN": "Chinese"
   }
   
